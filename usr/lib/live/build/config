@@ -1,6 +1,5 @@
 #!/bin/sh
-## This file modified from it's original version to correctly work 
-## with Lilidog.
+
 ## live-build(7) - System Build Scripts
 ## Copyright (C) 2016-2020 The Debian Live team
 ## Copyright (C) 2006-2015 Daniel Baumann <mail@daniel-baumann.ch>
@@ -1372,8 +1371,7 @@ do
 	fi
 done
 
-#LIVE_PKG_LIST="config/package-lists/live.list.chroot"
-LIVE_PKG_LIST="config/package-lists/live.list.chroot_live"
+LIVE_PKG_LIST="config/package-lists/live.list.chroot"
 if [ ! -e "${LIVE_PKG_LIST}" ]; then
 	NEEDED_PACKAGES=""
 	case "${LB_INITRAMFS}" in
